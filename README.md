@@ -36,12 +36,7 @@ Follow these steps to install the repo.  You'll first need python/pip, as well a
 Though optional, we recommend you use a virtual environment or equivalent:
 
 ```sh
-# If you're already in a venv, deactivate it.
-deactivate
-# Create a new venv.
-python -m venv ~/.virtualenvs/transformer-debugger
-# Activate the new venv.
-source ~/.virtualenvs/transformer-debugger/bin/activate
+pip install .
 ```
 
 Once your environment is set up, follow the following steps:

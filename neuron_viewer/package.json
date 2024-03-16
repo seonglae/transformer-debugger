@@ -28,7 +28,7 @@
     "check-type-warnings": "eslint --max-warnings=0 src --ext .js,.jsx,.ts,.tsx",
     "format-code": "prettier --write src",
     "check-code-format": "prettier --check src || (printf '\\e[31m\\nRun `npm run format-code` to fix\\n\\e[0m' && false)",
-    "generate-client": "openapi --input http://localhost:8000/openapi.json --output ./src/client --client axios && prettier --write src/client && sh prepend_autogen_comments.sh"
+    "generate-client": "openapi --input http://localhost:8888/openapi.json --output ./src/client --client axios && prettier --write src/client && sh prepend_autogen_comments.sh"
   },
   "eslintConfig": {
     "extends": [
@@ -134,16 +134,20 @@
   },
   "devDependencies": {
     "@observablehq/plot": "^0.6.11",
+    "@parcel/config-default": "^2.12.0",
     "@parcel/transformer-typescript-tsc": "^2.8.3",
-    "@parcel/validator-typescript": "^2.8.3",
+    " /validator-typescript": "^2.8.3",
     "@types/node": "^20.10.6",
     "assert": "^2.1.0",
     "eslint": "^8.41.0",
     "eslint-config-react-app": "^7.0.1",
+    "form-data": "^4.0.0",
     "openapi-typescript-codegen": "^0.24.0",
     "parcel": "^2.11.0",
+    "postcss": "^8.2.1",
     "prettier": "2.5.1",
     "serve": "^14.2.0",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.0.4"
   }
 }

@@ -1,49 +1,125 @@
+[project]
+authors = [
+  {name = "seonglae", email = "sungle3737@gmail.com"},
+]
+dependencies = [
+    "aiohttp>=3.9.3",
+    "click>=8.1.7",
+    "fastapi==0.97",
+    "fire>=0.6.0",
+    "httpx>=0.22",
+    "mypy==1.7.1",
+    "numpy>=1.26.4",
+    "orjson>=3.9.15",
+    "pre-commit>=3.6.2",
+    "pydantic<2.0.0",
+    "pytest>=8.1.1",
+    "pytest-asyncio>=0.23.5.post1",
+    "scikit-learn>=1.4.1.post1",
+    "starlette<0.28.0",
+    "tiktoken>=0.6.0",
+    "uvicorn>=0.28.0",
+    "torch>=2.1.2",
+]
+description = "Add your description here"
+name = "neuron-explainer"
+readme = "README.md"
+requires-python = ">= 3.8"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.rye]
+dev-dependencies = [
+    "pip>=24.0",
+    "setuptools>=69.2.0",
+]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["neuron_explainer"]
+
 [tool.black]
 line-length = 100
 target-version = ['py311']
 
 [tool.ruff]
+ignore = [
+  "B905",
+  "E2",
+  "E402",
+  "E501",
+  "E701",
+  "E711",
+  "E731",
+  "E741",
+  "B011",
+  "C408",
+  "NPY002",
+  "PIE790",
+]
 line-length = 100
 select = [
-    "E", "F", "W", "B", "C4", "PIE", "NPY", "PLE",
-    "DTZ003", "DTZ004",
-    "G010",
-    "PLW0120", "PLW0129", "PLW0711", "PLW2101",
-    "SIM101", "SIM110", "SIM201", "SIM202", "SIM222", "SIM223",
-    "S506",
-    "RET501", "RET502",
-    "RUF006", "RUF008", "RUF011", "RUF013", "RUF016", "RUF017", "RUF200",
-    "COM818", "COM819",
-    "ISC001",
-    "PYI016", "PYI018", "PYI025",
-    "PERF102",
-    "UP006", "UP007",
-    "FURB148", "FURB163", "FURB181",
-    "ASYNC100", "ASYNC102",
-    "TID251",
-]
-ignore = [
-    "B905",
-    "E2",
-    "E402",
-    "E501",
-    "E701",
-    "E711",
-    "E731",
-    "E741",
-    "B011",
-    "C408",
-    "NPY002",
-    "PIE790",
+  "E",
+  "F",
+  "W",
+  "B",
+  "C4",
+  "PIE",
+  "NPY",
+  "PLE",
+  "DTZ003",
+  "DTZ004",
+  "G010",
+  "PLW0120",
+  "PLW0129",
+  "PLW0711",
+  "PLW2101",
+  "SIM101",
+  "SIM110",
+  "SIM201",
+  "SIM202",
+  "SIM222",
+  "SIM223",
+  "S506",
+  "RET501",
+  "RET502",
+  "RUF006",
+  "RUF008",
+  "RUF011",
+  "RUF013",
+  "RUF016",
+  "RUF017",
+  "RUF200",
+  "COM818",
+  "COM819",
+  "ISC001",
+  "PYI016",
+  "PYI018",
+  "PYI025",
+  "PERF102",
+  "UP006",
+  "UP007",
+  "FURB148",
+  "FURB163",
+  "FURB181",
+  "ASYNC100",
+  "ASYNC102",
+  "TID251",
 ]
 unfixable = [
-    "F841",
-    "F601",
-    "F602",
-    "B018",
-    "SIM222",
-    "SIM223",
-    "B006",
+  "F841",
+  "F601",
+  "F602",
+  "B018",
+  "SIM222",
+  "SIM223",
+  "B006",
 ]
 
 target-version = "py311"
