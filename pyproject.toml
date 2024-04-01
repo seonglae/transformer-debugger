@@ -5,7 +5,7 @@ authors = [
 dependencies = [
     "aiohttp>=3.9.3",
     "click>=8.1.7",
-    "fastapi==0.97",
+    "fastapi==0.109.1",
     "fire>=0.6.0",
     "httpx>=0.22",
     "mypy==1.7.1",
