@@ -9,7 +9,7 @@ dependencies = [
     "fire>=0.6.0",
     "httpx>=0.22",
     "mypy==1.7.1",
-    "numpy>=1.26.4",
+    "numpy>=1.26.0",
     "orjson>=3.9.15",
     "pre-commit>=3.6.2",
     "pydantic<2.0.0",
@@ -19,7 +19,6 @@ dependencies = [
     "starlette<0.28.0",
     "tiktoken>=0.6.0",
     "uvicorn>=0.28.0",
-    "torch>=2.1.2",
 ]
 description = "Add your description here"
 name = "neuron-explainer"
