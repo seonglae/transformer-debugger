@@ -36,23 +36,18 @@ Follow these steps to install the repo.  You'll first need python/pip, as well a
 Though optional, we recommend you use a virtual environment or equivalent:
 
 ```sh
-pip install .
-```
-
-Once your environment is set up, follow the following steps:
-```sh
 git clone git@github.com:openai/transformer-debugger.git
 cd transformer-debugger
-
-# Install neuron_explainer
+# or with cpython>=3.11
 pip install -e .
+# install torch manually
 
 # Set up the pre-commit hooks.
 pre-commit install
 
 # Install neuron_viewer.
 cd neuron_viewer
-npm install
+pnpm install
 cd ..
 ```
 
