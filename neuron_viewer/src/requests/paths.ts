@@ -56,7 +56,7 @@ export function getActivationServerUrl(): string {
   if (process.env.NEURON_VIEWER_ACTIVATION_SERVER_URL) {
     return process.env.NEURON_VIEWER_ACTIVATION_SERVER_URL;
   }
-  return "http://0.0.0.0:8000";
+  return "http://0.0.0.0:1234";
 }
 
 OpenAPI.BASE = getActivationServerUrl();
