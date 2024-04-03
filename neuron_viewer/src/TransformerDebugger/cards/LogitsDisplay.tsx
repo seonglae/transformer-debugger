@@ -16,6 +16,7 @@ import {
   formatFloatWithZeroPoint,
 } from "../utils/numbers";
 import { ColDef, ColGroupDef } from "ag-grid-community";
+import './ag-grid.css';
 import "ag-grid-community/styles/ag-grid.css"; // Core grid CSS, always needed
 import "ag-grid-community/styles/ag-theme-alpine.css"; // Optional theme CSS
 import { renderToken } from "../../tokenRendering";
@@ -207,6 +208,7 @@ export const LogitsDisplay: React.FC<LogitsDisplayProps> = ({
       </div>
       <div className="ag-theme-alpine mt-2 mb-2" style={{ width: "800px", height: "400px" }}>
         <AgGridReact
+          rowHeight={50}
           columnDefs={columnDefs}
           rowData={otherTokensData}
           pinnedTopRowData={tokensOfInterestData}

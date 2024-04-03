@@ -1,0 +1,8 @@
+.ag-ltr .ag-cell {
+  align-content: center !important;
+}
+
+
+.ag-cell-value, .ag-group-value {
+  overflow: visible !important;
+}

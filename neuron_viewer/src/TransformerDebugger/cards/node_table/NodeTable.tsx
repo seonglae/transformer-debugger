@@ -268,7 +268,7 @@ function isDetailRow(params: IsFullWidthRowParams): boolean {
 function getRowHeight(params: RowHeightParams): number {
   const nodeInfo = params.node.data as NodeInfo;
   if (!params.node.data.isDetailRow) {
-    return 25;
+    return 50;
   }
   var numUniqueTopTokens = 0;
   for (const specName of TOP_TOKENS_SPEC_NAMES) {
